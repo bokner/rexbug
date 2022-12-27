@@ -263,6 +263,10 @@ defmodule Rexbug.Printing do
     mod.represent(struct, opts)
   end
 
+  def represent(_ignore, _opts) do
+    ""
+  end
+
   @doc """
   Extracts the call stack from `t:Rexbug.Printing.Call.t/0` `dump` field.
 
